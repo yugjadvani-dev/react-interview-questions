@@ -35,7 +35,7 @@ const FirstQuestions = () => {
     const filteredFruits = fruits.filter((item) => item.toLocaleLowerCase().includes(input.toLocaleLowerCase()));
 
     return (
-        <div className="flex h-full gap-4 p-4">
+        <>
             <Sidebar />
             <div className="w-full mx-auto">
                 <h1 className="mb-4">Search Input</h1>
@@ -44,7 +44,7 @@ const FirstQuestions = () => {
                     <p key={index}>{item}</p>
                 )) : <p>No results found</p>}
             </div>
-        </div>
+        </>
     );
 };
 
